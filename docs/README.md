@@ -184,6 +184,35 @@ console.log("food") // returns pizza
 
 ---
 
+### Jsoning#set
+
+Adds an element in the database based on its key and value.
+
+#### Parameters
+
+| Type | Name | Description |
+|------|------|-------------|
+| string | key | The key of the element to be added. |
+| * | value | The value of the element to be added. |
+
+#### Returns
+
+| Type | Description |
+|------|-------------|
+| Boolean | Returns true or false if the value gets set. |
+
+#### Example
+
+```js
+database.set("ping", "pong"); // { "ping": "pong" }
+database.set("ping", "foo"); // { "ping": "foo" }
+
+let set = database.set("hi", "hello");
+console.log(set); // true
+```
+
+---
+
 
 ## Links
 
