@@ -37,6 +37,8 @@
 
 A simple key-value JSON-based persistent lightweight database. It uses JSON files to modify and write key-value elements as JSON-objects. Recommended for small-scale data stores.
 
+**Prevents JSON corruption of JSON database files by writing to files [atomically](https://github.com/npm/write-file-atomic)!**
+
 **This package is in heavy WIP. While basic functions work, it is recommended not to use this database package to store sensitive info, for now.**
 
 ## Install
