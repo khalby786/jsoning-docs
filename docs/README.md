@@ -209,6 +209,7 @@ database.math("value2", "multiply", 5);
 
 console.log(database.get("value1")); // returns 1+1 = 2
 console.log(database.get("value2")); // returns 10*5 = 50
+```
 
 ---
 
