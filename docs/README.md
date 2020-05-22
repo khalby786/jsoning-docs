@@ -186,6 +186,32 @@ console.log("food") // returns pizza
 
 ---
 
+### Jsoning#math
+
+Performs mathematical operations on values of elements.
+
+#### Parameters
+
+| Type | Name | Description |
+|------|------|-------------|
+| sting | key | The key of the element for math to be performed on. |
+| string | operation | The operation to perform, one of `add`, `subtract`, `multiply` and `divide`. |
+| number (expected) | operand | The number for performing the mathematical operation (the operand). |
+
+#### Example
+
+```js
+database.set("value1", 1);
+database.set("value2", 10);
+
+database.math("value1", "add", 1);
+database.math("value2", "multiply", 5);
+
+console.log(database.get("value1")); // returns 1+1 = 2
+console.log(database.get("value2")); // returns 10*5 = 50
+
+---
+
 ### Jsoning#set
 
 Adds an element in the database based on its key and value.
