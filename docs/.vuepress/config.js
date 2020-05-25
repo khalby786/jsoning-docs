@@ -7,7 +7,7 @@ module.exports = {
   theme: 'yuu',
   themeConfig: {
     repo: "khalby786/jsoning",
-    logo: "https://cdn.glitch.com/c393fad9-338a-43b4-9a2f-8ba07e26d39d%2Fjsoning.png?v=1589190601684",
+    logo: "https://cdn.glitch.com/a1686874-cbbf-4ca9-b412-cd53a73b9ceb%2Fjsoning_square.png?v=1590375603069",
     // docsDir: 'guide',
     sidebarDepth: 3,
     editLinks: true,
