@@ -63,9 +63,11 @@ View the full documentation [here](/jsoning).
 ```js
 let jsoning = require('jsoning');
 let database = new jsoning("database.json");
+
 database.set("en", "db");
 database.set("foo", "bar");
 database.set("chro", "venter");
+
 let all = database.all();
 console.log(all); // {"en":"db","foo":"bar","chro":"venter"}
 ```
@@ -135,6 +137,7 @@ Clears the whole JSON database.
 ```js
 database.set("foo", "bar");
 database.set("en", "db");
+
 database.clear(); // return {}
 ```
 
@@ -161,6 +164,7 @@ Deletes an element from the database based on its key.
 ```js
 database.set("ping", "pong");
 database.set("foo", "bar");
+
 database.delete("foo"); // returns true
 ```
 
@@ -187,6 +191,7 @@ Gets the value of an element based on it's key.
 
 ```js
 database.set("food", "pizza");
+
 let food = database.get("food");
 console.log("food") // returns pizza
 ```
