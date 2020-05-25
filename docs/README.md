@@ -35,9 +35,16 @@
 
 ![jsoning](https://cdn.glitch.com/c393fad9-338a-43b4-9a2f-8ba07e26d39d%2Fjsoning.png?v=1589190601684)
 
-A simple key-value JSON-based persistent lightweight database. It uses JSON files to modify and write key-value elements as JSON-objects. Recommended for small-scale data stores.
+A simple key-value JSON-based persistent lightweight database. Recommended for small-scale data stores.
 
-**Prevents JSON corruption of JSON database files by writing to files [atomically](https://github.com/npm/write-file-atomic)!**
+✨ A simple key-value JSON-based persistent lightweight database. Recommended for small-scale data stores. ✨
+
+* 📝 Uses JSON files to modify and write key-value elements as JSON-objects.
+* 👌 **Easy to use** JSON database.
+* 🚫 **Prevents JSON corruption** with [atomic file writing](https://github.com/npm/write-file-atomic).
+* 1️⃣ Uses only **1** dependency ([`write-file-atomic`](https://github.com/npm/write-file-atomic))
+* 🕊️ **Lightweight** package with an unpacked size of **12.1 kB**.
+* 🖥️ Requires **Node.js v12.x** or greater
 
 **This package is in heavy WIP. While basic functions work, it is recommended not to use this database package to store sensitive info, for now.**
 
@@ -255,14 +262,9 @@ console.log(set); // true
 * [Khaleel Gibran](https://khaleelgibran.com) 
 * [chroventer](https://github.com/chroventer)
 
-## Versioning
+## License
 
-This package follows Semantic Versioning. Current version is v`0.3.9`.
-
-### To-do
-
-* Prevent JSON corruption
-* Error handling
+This package is open sourced under the [MIT License](https://github.com/khalby786/jsoning/blob/master/LICENSE.md).
 
 ---
 
