@@ -193,7 +193,7 @@ Gets the value of an element based on it's key.
 database.set("food", "pizza");
 
 let food = database.get("food");
-console.log("food") // returns pizza
+console.log(food) // returns pizza
 ```
 
 ---
