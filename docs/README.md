@@ -1,4 +1,3 @@
-# jsoning
 
 ![CodeCov](https://codecov.io/gh/khalby786/jsoning/branch/master/graph/badge.svg)
 [![Build Status](https://travis-ci.org/khalby786/jsoning.svg?branch=master)](https://travis-ci.org/khalby786/jsoning)
