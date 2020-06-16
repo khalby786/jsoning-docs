@@ -1,4 +1,5 @@
 const nav = require('./nav.js');
+const sidebar = require('./sidebar');
 
 module.exports = {
   base: '/',
@@ -15,6 +16,7 @@ module.exports = {
     sidebarDepth: 3,
     editLinks: true,
     lastUpdated: true,
-    nav
+    nav,
+    sidebar
   }
 };
