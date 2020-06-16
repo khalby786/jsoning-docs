@@ -25,7 +25,7 @@ const Jsoning = require("jsoning");
 var database = new Jsoning("json/file/name.json");
 ```
 
-::: warn
+::: warning
 Make sure the name of the database file ends with the extension `.json` or Jsoning will throw an error.
 :::
 
