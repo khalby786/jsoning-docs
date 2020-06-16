@@ -1,7 +1,3 @@
-#### Table of Contents
-
-[[toc]]
-
 # jsoning
 
 ![CodeCov](https://codecov.io/gh/khalby786/jsoning/branch/master/graph/badge.svg)
