@@ -1,7 +1,3 @@
-*This documentation and this package is currently under development.*
-
----
-
 #### Table of Contents
 
 [[toc]]
@@ -35,9 +31,7 @@
 
 ![jsoning](https://cdn.glitch.com/c393fad9-338a-43b4-9a2f-8ba07e26d39d%2Fjsoning.png?v=1589190601684)
 
-A simple key-value JSON-based persistent lightweight database. Recommended for small-scale data stores.
-
-✨ A simple key-value JSON-based persistent lightweight database. Recommended for small-scale data stores. ✨
+✨ A simple key-value JSON-based persistent lightweight database. ✨
 
 * 📝 Uses JSON files to modify and write key-value elements as JSON-objects.
 * 👌 **Easy to use** JSON database.
@@ -56,7 +50,7 @@ A simple key-value JSON-based persistent lightweight database. Recommended for s
 npm install jsoning
 ```
 
-View the full documentation [here](/jsoning).
+View the full documentation [here](https://khalby786.github.io/jsoning).
 
 ## Basic Usage
 
@@ -71,192 +65,10 @@ database.set("chro", "venter");
 let all = database.all();
 console.log(all); // {"en":"db","foo":"bar","chro":"venter"}
 ```
-## Jsoning Constructor
-
-Create a new JSON database or initialize an exisiting database.
-
-### Parameters
-
-| Type | Name | Description |
-|------|------|-------------|
-| string | database | The name of the JSON database to be created or used. |
-
-### Returns
-
-| Type | Description |
-|------|-------------|
-| Boolean | Whether an existing JSON file was used or created or the action failed. |
-
-### Example
-
-```js
-const jsoning = require('jsoning');
-var database = new jsoning("database.json");
-```
-
-::: warning
-Make sure **not** to include directory paths for the new database argument (like `dir/db.json`). Use file names only instead (like `db.json` and `hello.json`).
-:::
-
-
-## Methods
-
----
-
-### Jsoning#all
-
-Returns all the elements and their values of the JSON database.
-
-#### Returns
-
-| Type | Description |
-|------|-------------|
-| Object | The object of all the key-value pairs of the database. |
-
-#### Example
-
-```js
-let all = database.all();
-console.log(all); // { "foo": "bar", "hi": "hello" }
-```
-
----
-
-### Jsoning#clear
-
-Clears the whole JSON database.
-
-#### Returns
-
-| Type | Description |
-|------|-------------|
-| Boolean | Whether the database was cleared or not. |
-
-#### Example
-
-```js
-database.set("foo", "bar");
-database.set("en", "db");
-
-database.clear(); // return {}
-```
-
----
-
-### Jsoning#delete
-
-Deletes an element from the database based on its key.
-
-#### Parameters
-
-| Type | Name | Description |
-|------|------|-------------|
-| string | key | The key of the element to be deleted. |
-
-#### Returns
-
-| Type | Description |
-|------|-------------|
-| Boolean | Returns true if the value is deleted, else returns false. |
-
-#### Example
-
-```js
-database.set("ping", "pong");
-database.set("foo", "bar");
-
-database.delete("foo"); // returns true
-```
-
----
-
-### Jsoning#get 
-
-Gets the value of an element based on it's key.
-
-#### Parameters
-
-| Type | Name | Description |
-|------|------|-------------|
-| string | key | The key of the element to be fetched. |
-
-#### Returns
-
-| Type | Description |
-|------|-------------|
-| * | Returns value, if element exists, else returns false. |
-
-
-#### Example
-
-```js
-database.set("food", "pizza");
-
-let food = database.get("food");
-console.log(food) // returns pizza
-```
-
----
-
-### Jsoning#math
-
-Performs mathematical operations on values of elements.
-
-#### Parameters
-
-| Type | Name | Description |
-|------|------|-------------|
-| sting | key | The key of the element for math to be performed on. |
-| string | operation | The operation to perform, one of `add`, `subtract`, `multiply` and `divide`. |
-| number (expected) | operand | The number for performing the mathematical operation (the operand). |
-
-#### Example
-
-```js
-database.set("value1", 1);
-database.set("value2", 10);
-
-database.math("value1", "add", 1);
-database.math("value2", "multiply", 5);
-
-console.log(database.get("value1")); // returns 1+1 = 2
-console.log(database.get("value2")); // returns 10*5 = 50
-```
-
----
-
-### Jsoning#set
-
-Adds an element in the database based on its key and value.
-
-#### Parameters
-
-| Type | Name | Description |
-|------|------|-------------|
-| string | key | The key of the element to be added. |
-| * | value | The value of the element to be added. |
-
-#### Returns
-
-| Type | Description |
-|------|-------------|
-| Boolean | Returns true or false if the value gets set. |
-
-#### Example
-
-```js
-database.set("ping", "pong"); // { "ping": "pong" }
-database.set("ping", "foo"); // { "ping": "foo" }
-
-let set = database.set("hi", "hello");
-console.log(set); // true
-```
-
----
-
 
 ## Links
 
+* [Documentation](https://khalby786.github.io/jsoning)
 * [GitHub](https://github.com/khalby786/jsoning)
 * [Discord](https://discord.gg/3v8P9RE)
 * [Glitch](https://glitch.com/~jsoning)
