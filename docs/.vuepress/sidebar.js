@@ -7,7 +7,8 @@ module.exports = {
     {
       title: 'Basic Usage',
       children: [
-        '/basic-operations/creating-a-new-json-database'
+        '/basic-operations/creating-a-new-json-database',
+        '/basic-operations/creating-a-new-element
       ]
     }
   ]
