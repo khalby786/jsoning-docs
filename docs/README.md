@@ -35,9 +35,7 @@
 * 🕊️ **Lightweight** package with an unpacked size of **12.1 kB**.
 * 🖥️ Requires **Node.js v12.x** or greater
 
-**This package is in heavy WIP. While basic functions work, it is recommended not to use this database package to store sensitive info, for now.**
-
-## Install
+## Install 💾
 
 **Node.js v12.x or greater is required for this package to work.**
 
@@ -47,7 +45,7 @@ npm install jsoning
 
 View the full documentation [here](https://khalby786.github.io/jsoning).
 
-## Basic Usage
+## Basic Usage 📑
 
 ```js
 let jsoning = require('jsoning');
@@ -61,18 +59,14 @@ let all = database.all();
 console.log(all); // {"en":"db","foo":"bar","chro":"venter"}
 ```
 
-## Links
+## Links 🔗
 
 * [Documentation](https://khalby786.github.io/jsoning)
+* [Guide](https://jsoning.js.org)
 * [GitHub](https://github.com/khalby786/jsoning)
 * [Discord](https://discord.gg/3v8P9RE)
 * [Glitch](https://glitch.com/~jsoning)
 * [NPM](https://npmjs.org/jsoning)
-
-## Contributors
-
-* [Khaleel Gibran](https://khaleelgibran.com) 
-* [chroventer](https://github.com/chroventer)
 
 ## License
 
