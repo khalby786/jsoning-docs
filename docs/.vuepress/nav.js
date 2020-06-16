@@ -5,7 +5,7 @@ module.exports = [
   },
   {
     text: "Documentation",
-    link: "/#jsoning-constructor",
+    link: "https://khalby786.github.io/jsoning/",
   },
   {
     text: "NPM",
